@@ -57,7 +57,7 @@ const Footer = () => {
                   </ul>
                 </li>
               )}
-              <li>
+              {/* <li>
                 <p className={styles.footerMenuTitle}>
                   <strong>More</strong>
                 </p>
@@ -69,7 +69,7 @@ const Footer = () => {
                     <a href="/sitemap.xml">Sitemap</a>
                   </li>
                 </ul>
-              </li>
+              </li> */}
             </ul>
           </Container>
         </Section>

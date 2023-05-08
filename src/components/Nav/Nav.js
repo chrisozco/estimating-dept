@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState, useCallback } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { FaSearch } from 'react-icons/fa';
 
 import useSite from 'hooks/use-site';
@@ -178,7 +179,14 @@ const Nav = () => {
     <nav className={styles.nav}>
       <Section className={styles.navSection}>
         <p className={styles.navName}>
-          <Link href="/">{title}</Link>
+          <Link href="/">
+            <Image
+              src="/images/ms-logo.png"
+              alt="Estimating Dept Logo"
+              width={120}
+              height={120}
+            />
+          </Link>
         </p>
         <ul className={styles.navMenu}>
           {navigation?.map((listItem) => {
