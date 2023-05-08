@@ -180,12 +180,7 @@ const Nav = () => {
       <Section className={styles.navSection}>
         <p className={styles.navName}>
           <Link href="/">
-            <Image
-              src="/images/ms-logo.png"
-              alt="Estimating Dept Logo"
-              width={120}
-              height={120}
-            />
+            <Image src="/images/ms-logo.png" alt="Estimating Dept Logo" width={120} height={120}/>
           </Link>
         </p>
         <ul className={styles.navMenu}>
