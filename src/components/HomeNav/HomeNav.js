@@ -19,7 +19,7 @@ const HomeNav = () => {
             </div>
             <div className={styles.headerSectionThree}>
                 <Link href="/">
-                    <Image src="/images/ed-logo.png" alt="Estimating Dept Logo" width={40} height={100}/>
+                    <Image src="/images/ms-logo-vertical.png" alt="Estimating Dept Logo" width={45} height={100}/>
                 </Link>
             </div>
             <div className={styles.headerSectionFour}>

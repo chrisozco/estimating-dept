@@ -2,15 +2,15 @@ import useSite from 'hooks/use-site';
 import { WebsiteJsonLd } from 'lib/json-ld';
 
 import Layout from 'components/LayoutV2/Layout';
-import Header from 'components/Header';
 import Section from 'components/SectionV2';
-import Container from 'components/Container';
+import Container from 'components/ContainerV2';
 import HomeNav from 'components/HomeNav/HomeNav';
+import HomeCopy from 'components/HomeCopy/HomeCopy';
 
 import styles from 'styles/pages/Home.module.scss'
 import Image from 'next/image';
 
-export default function Home({ posts, pagination }) {
+export default function Home() {
   const { metadata = {} } = useSite();
   const { title, description } = metadata;
 
@@ -28,7 +28,8 @@ export default function Home({ posts, pagination }) {
           />
         </div>
         <Container>
-        <HomeNav />
+          <HomeNav />
+          <HomeCopy />
         </Container>
       </Section>
     </Layout>

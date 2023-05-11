@@ -1,8 +1,7 @@
 .pageHero{
-    width: calc(100% - 160px);
     padding: 80px 0 40px 0;
     position: relative;
-    margin-right: 0px;
+    margin-right: 100px;
 }
 
 .heroContent {
@@ -26,11 +25,11 @@
     width: 1200px;
     font-family: sans-serif;
     font-size: larger;
-    font-weight: 300;
+    font-weight: 400;
     text-decoration: none;
     letter-spacing: 2px;
     color: black;
     width: 1120px;
-    background-color: #D9D9D9;
-    opacity: .2;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
 }
