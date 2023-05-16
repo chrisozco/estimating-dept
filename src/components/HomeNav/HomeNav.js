@@ -7,7 +7,7 @@ const HomeNav = () => {
         <div className={styles.homeHeader}>
             <div className={styles.headerSectionOne}>
                 <Link href="/">
-                    <Image src="/images/ms-logo.png" alt="Estimating Dept Logo" width={120} height={120}/>
+                    <Image src="/images/ms-logo.png" alt="Estimating Dept Logo" width={100} height={100}/>
                 </Link>
             </div>
             <div className={styles.headerSectionTwo}>
@@ -18,8 +18,8 @@ const HomeNav = () => {
                 </ul>
             </div>
             <div className={styles.headerSectionThree}>
-                <Link href="/">
-                    <Image src="/images/ms-logo-vertical.png" alt="Estimating Dept Logo" width={45} height={100}/>
+                <Link href="/" className={styles.sectionThreeText}>
+                    The Estimating Dept.
                 </Link>
             </div>
             <div className={styles.headerSectionFour}>
