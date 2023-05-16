@@ -24,7 +24,7 @@
 .heroDescription {
     width: 1200px;
     font-family: sans-serif;
-    font-size: larger;
+    font-size: 24px;
     font-weight: 400;
     text-decoration: none;
     letter-spacing: 2px;
@@ -32,4 +32,62 @@
     width: 1120px;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 8px;
+}
+
+@media (max-width: 1440px) {
+    .pageHero {
+        margin-right: 120px;
+    }
+    .heroContent {
+        margin-left: 20px;
+    }
+    .heroDescription {
+        font-size: 20px;
+        width: 960px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .pageHero {
+        margin-right: 200px;
+    }
+    .heroContent {
+        margin-left: 20px;
+    }
+    .heroHeadline {
+        font-size: 160px;
+    }
+    .heroDescription {
+        font-size: 18px;
+        width: 760px;
+    }
+}
+
+@media (max-width: 767px) {
+    .pageHero {
+        margin-right: 120px;
+    }
+    .heroContent {
+        margin-left: 20px;
+    }
+    .heroDescription {
+        font-size: 20px;
+        width: 960px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pageHero {
+        margin-right: 0px;
+    }
+    .heroContent {
+        margin: 0 20px;
+    }
+    .heroHeadline {
+        font-size: 120px;
+    }
+    .heroDescription {
+        font-size: 18px;
+        width: 760px;
+    }
 }

@@ -19,15 +19,15 @@ export default function Home() {
       <WebsiteJsonLd siteTitle={title} />
 
       <Section>
-        <div className={styles.bgImg}>
-          <Image 
-            src='/images/plans-bg.jpg'
-            alt='Construction Plans Background'
-            fill={true}
-            style={{objectFit: "cover"}}
-          />
-        </div>
         <Container>
+        <div className={styles.bgImg}>
+            <Image 
+              src='/images/plans-bg.jpg'
+              alt='Construction Plans Background'
+              fill={true}
+              style={{objectFit: "cover"}}
+            />
+          </div>
           <HomeNav />
           <HomeCopy />
         </Container>
