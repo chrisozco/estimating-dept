@@ -7,7 +7,7 @@ const HomeNav = () => {
         <div className={styles.homeHeader}>
             <div className={styles.headerSectionOne}>
                 <Link href="/">
-                    <Image src="/images/ms-logo.png" alt="Estimating Dept Logo" width={100} height={100}/>
+                    <Image src="/images/ms-logo.png" alt="Estimating Dept Logo" width={100} height={100} className={styles.sectionOneImg}/>
                 </Link>
             </div>
             <div className={styles.headerSectionTwo}>
