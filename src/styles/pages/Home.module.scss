@@ -1,8 +1,31 @@
 // @import "styles/settings/__settings";
 
-.bgImg {
+#bgImg {
     z-index: -1;
     position: absolute;
-    height: 100vh;
-    width: 100vw;
+    height: 101vh !important;
+    width: 100vw !important;
+}
+
+@media (max-width: 1440px) {
+    #bgImg {
+        height: 87vh !important;  
+    }
+}
+@media (max-width: 1220px) {
+    #bgImg {
+        height: 88vh !important;  
+    }
+}
+
+@media (max-width: 1080px) {
+    #bgImg {
+        height: 86vh !important;  
+    }
+}
+
+@media (max-width: 970px) {
+    #bgImg {
+        height: 68vh !important;
+    }
 }

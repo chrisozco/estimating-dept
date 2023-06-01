@@ -20,7 +20,7 @@ export default function Home() {
 
       <Section>
           <Image
-            className={styles.bgImg}
+            id={styles.bgImg}
             src='/images/plans-bg.jpg'
             alt='Construction Plans Background'
             fill={true}
