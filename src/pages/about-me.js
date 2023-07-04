@@ -25,14 +25,14 @@ export default function AboutMe() {
                         <Image 
                         className={styles.aboutMeImgOne}
                         src='/images/sexauer_portrait.jpg'
-                        width={400}
+                        width={460}
                         height={300}
                         alt='Mark Portrait Image'
                         />
                     </div>
                     <div className={styles.sectionTwo}>
                         <Image 
-                        className={styles.aboutMeImgOne}
+                        className={styles.aboutMeImgTwo}
                         src='/images/ms-army-img.jpg'
                         width={500}
                         height={300}
@@ -44,7 +44,7 @@ export default function AboutMe() {
                         </div>
                     </div>
                     <div className={styles.sectionThree}>
-                        <p>When not at work he loves spending time on his own craftsman style house in West Seattle, skiing, gardening, baking bread and cooking for his wife and kids.</p>
+                        <p>When not at work I loves spending time in my craftsman style house in West Seattle, gardening, baking bread and cooking for my wife and kids. Oh and skiing during the season!</p>
                     </div>
                     <div className={styles.sectionFour}>
                         <Link href="/" className={styles.linkHome}>Back Home</Link>
