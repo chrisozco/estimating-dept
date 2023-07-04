@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Helmet } from 'react-helmet';
+import Image from 'next/image';
 
 import Layout from 'components/Layout';
 import Section from 'components/Section';
@@ -16,11 +17,39 @@ export default function AboutMe() {
             </Helmet>
             <Section>
                 <Container className={styles.center}>
-                    <h1>Mark Sexauer</h1>
-                    <p className={styles.errorCode}>The Guy Who Builds The Blog</p>
-                    <p>
-                        <Link href="/">Go back home</Link>
-                    </p>
+                    <div className={styles.titleContainer}>
+                        <h1 id={styles.title}>Who is this Guy?</h1>
+                    </div>
+                    <div className={styles.sectionOne}>
+                        <p className={styles.sectionOneText}>Mark grew up in a North Seattle neighborhood. He spent most of his early childhood and teen years in a craftsman style house built in 1907. Growing up in an old house with lots of character sparked an early interest in how things are built. All through middle and high school he worked for a general contractor, who was a family friend, doing residential remodels around the North Seattle area.</p>
+                        <Image 
+                        className={styles.aboutMeImgOne}
+                        src='/images/sexauer_portrait.jpg'
+                        width={400}
+                        height={300}
+                        alt='Mark Portrait Image'
+                        />
+                    </div>
+                    <div className={styles.sectionTwo}>
+                        <Image 
+                        className={styles.aboutMeImgOne}
+                        src='/images/ms-army-img.jpg'
+                        width={500}
+                        height={300}
+                        alt='Mark Portrait Image'
+                        />
+                        <div className={styles.sectionTwoText}>
+                            <p>After a tour in Iraq in 2003/2004 and a stint in the bar/restaurant industry Mark embraced his early passion for working in construction.</p>
+                            <p>Growing frustrated with contentious contractor vs homeowner relationships Mark decided to help spread awareness to improve these conditions. Content is intended for anyone interested in construction. From first-time homeowners to seasoned contractors and even developers.</p>
+                        </div>
+                    </div>
+                    <div className={styles.sectionThree}>
+                        <p>When not at work he loves spending time on his own craftsman style house in West Seattle, skiing, gardening, baking bread and cooking for his wife and kids.</p>
+                    </div>
+                    <div className={styles.sectionFour}>
+                        <Link href="/" className={styles.linkHome}>Back Home</Link>
+                        <Link href="/posts/" className={styles.linkBlog}>Read It</Link>
+                    </div>
                 </Container>
             </Section>
         </Layout>
