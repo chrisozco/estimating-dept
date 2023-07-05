@@ -14,7 +14,7 @@ const HomeNav = () => {
                 <ul className={styles.headerNavList}>
                     <li className={styles.headerNavOptions}><Link href="/posts">Blog</Link></li>
                     <li className={styles.headerNavOptions}><Link href="/about-me">About Me</Link></li>
-                    <li className={styles.headerNavOptions}><Link href="/404">Connect</Link></li>
+                    <li className={styles.headerNavOptions}><Link href="/contact">Connect</Link></li>
                 </ul>
             </div>
             <div className={styles.headerSectionThree}>

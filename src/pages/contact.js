@@ -46,12 +46,13 @@ export default function ContactForm() {
             <Helmet>
                 <title>Who is This Guy?</title>
                 <meta name="robots" content="noindex, nofollow" />
+                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
             </Helmet>
 
             <Section>
                 <form onSubmit={handleSubmit}>
-                    <div className="">
-                        <label className="" htmlFor="name">
+                    <div className="w-full flex flex-col my-4">
+                        <label className="font-bold text-gray-800" htmlFor="name">
                             Name
                         </label>
                         <input
@@ -59,13 +60,13 @@ export default function ContactForm() {
                             minLength={3}
                             maxLength={150}
                             required
-                            className=""
+                            className=" p-4 bg-gray-50 border border-gray-100 "
                             autoComplete="off"
                             id="name"
                         />
                     </div>
-                    <div className="">
-                        <label className="" htmlFor="email">
+                    <div className="w-full flex flex-col my-4">
+                        <label className="font-bold text-gray-800" htmlFor="email">
                             Email
                         </label>
                         <input
@@ -73,13 +74,13 @@ export default function ContactForm() {
                             minLength={5}
                             maxLength={150}
                             required
-                            className=""
+                            className=" p-4 bg-gray-50 border border-gray-100 "
                             autoComplete="off"
                             id="email"
                         />
                     </div>
                     <div>
-                        <label className="" htmlFor="message">
+                        <label className="font-bold text-gray-800" htmlFor="message">
                             Message
                         </label>
                         <textarea
@@ -88,13 +89,13 @@ export default function ContactForm() {
                             minLength={10}
                             maxLength={500}
                             name="message"
-                            className=" "
+                            className="w-full p-4 bg-gray-50 border border-gray-100 "
                         />
                     </div>
                     <button
                         type="submit"
                         disabled={loading}
-                        className="">
+                        className="px-4 py-2 w-40 bg-gray-700 disabled:bg-gray-400 disabled:text-gray-100 text-white font-medium mt-4">
                         Send Message
                     </button>
                 </form>
