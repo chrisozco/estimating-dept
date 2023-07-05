@@ -5,6 +5,7 @@ import Section from 'components/Section';
 import Container from 'components/Container';
 
 import { useState } from "react";
+import styles from 'styles/pages/Contact.module.scss'
 
 export default function ContactForm() {
 	const [loading, setLoading] = useState(false);
@@ -46,59 +47,65 @@ export default function ContactForm() {
             <Helmet>
                 <title>Who is This Guy?</title>
                 <meta name="robots" content="noindex, nofollow" />
-                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossOrigin="anonymous" />
+                <meta charset="UTF-8"></meta>
             </Helmet>
 
             <Section>
-                <form onSubmit={handleSubmit}>
-                    <div className="w-full flex flex-col my-4">
-                        <label className="font-bold text-gray-800" htmlFor="name">
-                            Name
-                        </label>
-                        <input
-                            type="text"
-                            minLength={3}
-                            maxLength={150}
-                            required
-                            className=" p-4 bg-gray-50 border border-gray-100 "
-                            autoComplete="off"
-                            id="name"
-                        />
-                    </div>
-                    <div className="w-full flex flex-col my-4">
-                        <label className="font-bold text-gray-800" htmlFor="email">
-                            Email
-                        </label>
-                        <input
-                            type="email"
-                            minLength={5}
-                            maxLength={150}
-                            required
-                            className=" p-4 bg-gray-50 border border-gray-100 "
-                            autoComplete="off"
-                            id="email"
-                        />
-                    </div>
-                    <div>
-                        <label className="font-bold text-gray-800" htmlFor="message">
-                            Message
-                        </label>
-                        <textarea
-                            rows={4}
-                            required
-                            minLength={10}
-                            maxLength={500}
-                            name="message"
-                            className="w-full p-4 bg-gray-50 border border-gray-100 "
-                        />
-                    </div>
-                    <button
-                        type="submit"
-                        disabled={loading}
-                        className="px-4 py-2 w-40 bg-gray-700 disabled:bg-gray-400 disabled:text-gray-100 text-white font-medium mt-4">
-                        Send Message
-                    </button>
-                </form>
+                <Container className={styles.center}>
+                    <h1>Let's Connect! 🤝</h1>
+                    <form onSubmit={handleSubmit} className={styles.form}>
+                        <div className={styles.inputOne}>
+                            <label className={styles.inputOneLabel} htmlFor="name">
+                                Name
+                            </label>
+                            <input
+                                type="text"
+                                minLength={3}
+                                maxLength={150}
+                                required
+                                className={styles.inputOneInput}
+                                autoComplete="off"
+                                id="name"
+                            />
+                        </div>
+                        <div className={styles.inputTwo}>
+                            <label className={styles.inputTwoLabel} htmlFor="email">
+                                Email
+                            </label>
+                            <input
+                                type="email"
+                                minLength={5}
+                                maxLength={150}
+                                required
+                                className={styles.inputTwoInput}
+                                autoComplete="off"
+                                id="email"
+                            />
+                        </div>
+                        <div className={styles.inputThree}>
+                            <label className={styles.inputThreeLabel} htmlFor="message">
+                                Message
+                            </label>
+                            <textarea
+                                rows={4}
+                                required
+                                minLength={10}
+                                maxLength={500}
+                                name="message"
+                                className={styles.inputThreeInput}
+                            />
+                        </div>
+                        <div className={styles.buttonWrapper}>
+                            <button
+                                type="submit"
+                                disabled={loading}
+                                className={styles.formButton}>
+                                <span>Send!</span>
+                            </button>
+                        </div>
+                    </form>
+                </Container>
             </Section>
 
         </Layout>
