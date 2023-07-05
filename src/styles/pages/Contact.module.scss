@@ -1,0 +1,93 @@
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.inputOne {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 50px 0px;
+    .inputOneLabel {
+        font-size: x-large;
+        font-weight: 300;
+    }
+    .inputOneInput {
+        width: 500px;
+    }
+}
+
+.inputTwo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 50px 0px;
+    .inputTwoLabel {
+        font-size: x-large;
+        font-weight: 300;
+    }
+    .inputTwoInput {
+        width: 500px;
+    }
+}
+
+.inputThree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 50px 0px;
+    .inputThreeLabel {
+        font-size: x-large;
+        font-weight: 300;
+    }
+    .inputThreeInput {
+        width: 500px;
+        height: 250px;
+    }
+}
+
+.buttonWrapper {
+    position: relative;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    .formButton {
+        display: block;
+        width: 200px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 18px;
+        font-family: sans-serif;
+        text-decoration: none;
+        color: #333;
+        border: 2px solid #333;
+        letter-spacing: 2px;
+        text-align: center;
+        position: relative;
+        transition: all .35s;
+        span {
+            position: relative;
+            z-index: 2;
+        }
+    }
+    .formButton::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #0e8a0bf2;
+        transition: all .35s;
+    }
+    .formButton:hover {
+        color: #ffffff;
+    }
+    .formButton:hover::after {
+        width: 100%;
+    }
+}
