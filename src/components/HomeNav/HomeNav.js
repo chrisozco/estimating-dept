@@ -12,9 +12,9 @@ const HomeNav = () => {
             </div>
             <div className={styles.headerSectionTwo}>
                 <ul className={styles.headerNavList}>
-                    <li className={styles.headerNavOptions}><Link href="/posts">Blog</Link></li>
-                    <li className={styles.headerNavOptions}><Link href="/about-me">About Me</Link></li>
-                    <li className={styles.headerNavOptions}><Link href="/contact">Connect</Link></li>
+                    <li className={styles.headerNavOptions}><Link href="/posts" className="transition ease-in-out delay-150 hover:-translate-y-1 hover:bg-emerald-200 duration-300 px-4 rounded-md">Blog</Link></li>
+                    <li className={styles.headerNavOptions}><Link href="/about-me" className="transition ease-in-out delay-150 hover:-translate-y-1 hover:bg-emerald-200 duration-300 px-4 rounded-md">About Me</Link></li>
+                    <li className={styles.headerNavOptions}><Link href="/contact" className="transition ease-in-out delay-150 hover:-translate-y-1 hover:bg-emerald-200 duration-300 px-4 rounded-md">Connect</Link></li>
                 </ul>
             </div>
             <div className={styles.headerSectionThree}>

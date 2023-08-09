@@ -16,7 +16,8 @@
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     padding: 10px 10px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .headerNavList {
@@ -41,6 +42,10 @@
     text-decoration: none;
     letter-spacing: 2px;
     color: black;
+}
+
+.headerNavOptionsa:hover {
+    background-color: rgb(171, 235, 198);
 }
 
 .headerSectionThree {
