@@ -21,10 +21,10 @@ const HamburgerIcon = () => (
 
 export const Links = () => (
     <div className='flex flex-col items-center'>
-    <Link href="/" className='font-bold p-4 text-white bg-neutral-600 w-screen text-center'>Home</Link>
-    <Link href="/posts" className='font-bold p-4 text-white bg-neutral-600 w-screen text-center'>Blog</Link>
-    <Link href="/about-me" className='font-bold p-4 text-white bg-neutral-600 w-screen text-center'>About Me</Link>
-    <Link href="/contact" className='font-bold p-4 text-white bg-neutral-600 w-screen text-center'>Contact</Link>
+    <Link href="/" className='font-bold p-4 text-white bg-stone-600 w-screen text-center bg-opacity-80'>Home</Link>
+    <Link href="/posts" className='font-bold p-4 text-white bg-stone-600 w-screen text-center bg-opacity-80'>Blog</Link>
+    <Link href="/about-me" className='font-bold p-4 text-white bg-stone-600 w-screen text-center bg-opacity-80'>About Me</Link>
+    <Link href="/contact" className='font-bold p-4 text-white bg-stone-600 w-screen text-center bg-opacity-80'>Contact</Link>
     </div>
 )
 
