@@ -5,6 +5,10 @@
     text-align: center;
 }
 
+.contactTitle {
+    font-size: 50px;
+}
+
 .inputOne {
     display: flex;
     flex-direction: column;
@@ -17,6 +21,8 @@
     }
     .inputOneInput {
         width: 500px;
+        border: solid 2px;
+        border-radius: 8px;
     }
 }
 
@@ -32,6 +38,8 @@
     }
     .inputTwoInput {
         width: 500px;
+        border: solid 2px;
+        border-radius: 8px;
     }
 }
 
@@ -48,46 +56,48 @@
     .inputThreeInput {
         width: 500px;
         height: 250px;
+        border: solid 2px;
+        border-radius: 8px;
     }
 }
 
-.buttonWrapper {
-    position: relative;
-    left: 80%;
-    transform: translate(-50%, -50%);
-    .formButton {
-        display: block;
-        width: 200px;
-        height: 40px;
-        line-height: 40px;
-        font-size: 18px;
-        font-family: sans-serif;
-        text-decoration: none;
-        color: #333;
-        border: 2px solid #333;
-        letter-spacing: 2px;
-        text-align: center;
-        position: relative;
-        transition: all .35s;
-        span {
-            position: relative;
-            z-index: 2;
-        }
-    }
-    .formButton::after {
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 100%;
-        background: #0e8a0bf2;
-        transition: all .35s;
-    }
-    .formButton:hover {
-        color: #ffffff;
-    }
-    .formButton:hover::after {
-        width: 100%;
-    }
-}
+// .buttonWrapper {
+//     position: relative;
+//     left: 80%;
+//     transform: translate(-50%, -50%);
+//     .formButton {
+//         display: block;
+//         width: 200px;
+//         height: 40px;
+//         line-height: 40px;
+//         font-size: 18px;
+//         font-family: sans-serif;
+//         text-decoration: none;
+//         color: #333;
+//         border: 2px solid #333;
+//         letter-spacing: 2px;
+//         text-align: center;
+//         position: relative;
+//         transition: all .35s;
+//         span {
+//             position: relative;
+//             z-index: 2;
+//         }
+//     }
+//     .formButton::after {
+//         position: absolute;
+//         content: "";
+//         top: 0;
+//         left: 0;
+//         width: 0;
+//         height: 100%;
+//         background: #0e8a0bf2;
+//         transition: all .35s;
+//     }
+//     .formButton:hover {
+//         color: #ffffff;
+//     }
+//     .formButton:hover::after {
+//         width: 100%;
+//     }
+// }

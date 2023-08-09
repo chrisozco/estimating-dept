@@ -6,6 +6,7 @@ import Container from 'components/Container';
 
 import { useState } from "react";
 import styles from 'styles/pages/Contact.module.scss'
+import { motion } from 'framer-motion';
 
 export default function ContactForm() {
 	const [loading, setLoading] = useState(false);
@@ -20,7 +21,7 @@ export default function ContactForm() {
 			message: String(event.target.message.value),
 		};
 
-		const response = await fetch("/api/contact", {
+		const response = await fetch("/contact", {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
@@ -53,7 +54,7 @@ export default function ContactForm() {
 
             <Section>
                 <Container className={styles.center}>
-                    <h1>Let's Connect! 🤝</h1>
+                    <h1 className={styles.contactTitle}>Let's Connect! 🤝</h1>
                     <form onSubmit={handleSubmit} className={styles.form}>
                         <div className={styles.inputOne}>
                             <label className={styles.inputOneLabel} htmlFor="name">
@@ -97,17 +98,24 @@ export default function ContactForm() {
                             />
                         </div>
                         <div className={styles.buttonWrapper}>
-                            <button
+                            <motion.button
+                                type="submit"
+                                disabled={loading}
+                                className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
+                                whileHover={{scale: 1.1}}
+                                whileTap={{scale: 0.9}}>
+                                <span>Send!</span>
+                            </motion.button>
+                            {/* <button
                                 type="submit"
                                 disabled={loading}
                                 className={styles.formButton}>
                                 <span>Send!</span>
-                            </button>
+                            </button> */}
                         </div>
                     </form>
                 </Container>
             </Section>
-
         </Layout>
 	);
 }
