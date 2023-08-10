@@ -47,7 +47,7 @@ export default function AboutMe() {
                         <p>When not at work I love spending time in my craftsman style house in West Seattle, gardening, baking bread and cooking for my wife and kids. Oh and skiing during the season!</p>
                     </div>
                     <div className={styles.sectionFour}>
-                        <Link href="/" className={styles.linkHome}>Back Home</Link>
+                        <Link href="/" className={styles.linkHome}>Home</Link>
                         <Link href="/posts/" className={styles.linkBlog}>Read It</Link>
                     </div>
                 </Container>
