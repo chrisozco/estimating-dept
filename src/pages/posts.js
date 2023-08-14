@@ -21,7 +21,7 @@ export default function Home({ posts, pagination }) {
       <Header>
         <h1
           dangerouslySetInnerHTML={{
-            __html: title,
+            __html: 'Estimating Dept. Blog',
           }}
         />
 
