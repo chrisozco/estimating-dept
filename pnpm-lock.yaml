@@ -106,6 +106,9 @@ devDependencies:
   tailwindcss:
     specifier: ^3.3.3
     version: 3.3.3
+  yarn:
+    specifier: ^1.22.19
+    version: 1.22.19
 
 packages:
 
@@ -3467,6 +3470,13 @@ packages:
   /yaml@2.2.2:
     resolution: {integrity: sha512-CBKFWExMn46Foo4cldiChEzn7S7SRV+wqiluAb6xmueD/fGyRHIhX8m14vVGgeFWjN540nKCNVj6P21eQjgTuA==}
     engines: {node: '>= 14'}
+    dev: true
+
+  /yarn@1.22.19:
+    resolution: {integrity: sha512-/0V5q0WbslqnwP91tirOvldvYISzaqhClxzyUKXYxs07yUILIs5jx/k6CFe8bvKSkds5w+eiOqta39Wk3WxdcQ==}
+    engines: {node: '>=4.0.0'}
+    hasBin: true
+    requiresBuild: true
     dev: true
 
   /yocto-queue@0.1.0:
