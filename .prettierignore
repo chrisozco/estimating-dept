@@ -21,7 +21,6 @@ README.md
 # misc
 .DS_Store
 *.pem
-/src/components
 
 # debug
 npm-debug.log*
