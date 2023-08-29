@@ -1,1 +1,1 @@
-export { default } from './HomeNav'
+export { default } from './HomeNav';

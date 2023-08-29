@@ -1,1 +1,1 @@
-export { default } from './HomeCopy'
+export { default } from './HomeCopy';

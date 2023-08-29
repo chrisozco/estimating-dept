@@ -21,8 +21,7 @@ const Nav = () => {
 
   const [searchVisibility, setSearchVisibility] = useState(SEARCH_HIDDEN);
 
-  const { metadata = {}, menus } = useSite();
-  const { title } = metadata;
+  const { menus } = useSite();
 
   const navigationLocation = process.env.WORDPRESS_MENU_LOCATION_NAVIGATION || MENU_LOCATION_NAVIGATION_DEFAULT;
   const navigation = findMenuByLocation(menus, navigationLocation);
@@ -60,7 +59,6 @@ const Nav = () => {
       removeResultsRoving();
       removeDocumentOnClick();
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchVisibility]);
 
   /**
@@ -163,7 +161,6 @@ const Nav = () => {
       clearSearch();
       setSearchVisibility(SEARCH_HIDDEN);
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -172,7 +169,6 @@ const Nav = () => {
     return () => {
       document.removeEventListener('keydown', escFunction, false);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -180,7 +176,7 @@ const Nav = () => {
       <Section className={styles.navSection}>
         <p className={styles.navName}>
           <Link href="/">
-            <Image src="/images/ms-logo.png" alt="Estimating Dept Logo" width={120} height={120}/>
+            <Image src="/images/ms-logo.png" alt="Estimating Dept Logo" width={120} height={120} />
           </Link>
         </p>
         <ul className={styles.navMenu}>

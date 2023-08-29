@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-document-import-in-page */
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { Helmet } from 'react-helmet';
 
