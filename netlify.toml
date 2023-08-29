@@ -2,8 +2,6 @@
   command = "CI= yarn build"
   publish = ".next"
 
-[build.environment]
-  NETLIFY_NEXT_PLUGIN_SKIP = "true"
 
 [[plugins]]
 package = "@netlify/plugin-nextjs"
