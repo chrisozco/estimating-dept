@@ -6,7 +6,7 @@ import Layout from 'components/Layout';
 import Section from 'components/Section';
 import Container from 'components/Container';
 
-import styles from 'styles/pages/about-me.module.scss';
+import styles from 'styles/pages/About-Me.module.scss';
 
 export default function AboutMe() {
   return (
