@@ -59,7 +59,7 @@ export default function ContactForm() {
       <Section>
         <Container className={styles.center}>
           <h1 className={styles.contactTitle}>Let&apos;s Connect! 🤝</h1>
-          <form onSubmit={handleSubmit} className={styles.form}>
+          <form onSubmit={handleSubmit} className={styles.form} data-netlify="true" name='contactForm'>
             <div className={styles.inputOne}>
               <label className={styles.inputOneLabel} htmlFor="name">
                 Name
