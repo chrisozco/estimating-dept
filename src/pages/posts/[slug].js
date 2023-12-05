@@ -55,6 +55,7 @@ export default function Post({ post, socialImage, related }) {
   if (process.env.WORDPRESS_PLUGIN_SEO !== true) {
     metadata.title = `${title} - ${siteMetadata.title}`;
     metadata.og.title = metadata.title;
+    metadata.og.image = post.og.imageUrl;
     metadata.twitter.title = metadata.title;
   }
 
